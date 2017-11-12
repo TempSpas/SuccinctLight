@@ -172,7 +172,7 @@ body[type*=server] .sender { display: none; }
 /* Any and all channel events */
 /*body[type*=channel]*/ .event .message {
     font-style: italic;
-    color: #444444 !important;
+    color: #93a1a1 !important;
     background: #E0E0FF;
     font-size: 0.8em !important;
     padding: 3px 8px 1px;
@@ -183,7 +183,7 @@ body[type*=server] .sender { display: none; }
 }
 
 /*body[type*=channel]*/ .event .time {
-    color: #444444 !important;
+    color: #93a1a1 !important;
     background: #E0E0FF;
     font-size: 0.8em !important;
     padding: 3px 8px 1px;
