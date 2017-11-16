@@ -398,7 +398,7 @@ body[type*=server] .event .message:before {
 .message_buffer_session_indicator > span {
     font-style: oblique;
     margin: 0 1em;
-    color: #93a1a1;
+    color: #586e75;
 }
 
 .message_buffer_session_indicator + #mark {
