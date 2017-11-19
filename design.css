@@ -98,7 +98,10 @@ body[type*=server] .message {
 }
 
 /* Background of ??? */
-.sender,
+.sender {
+    background: #eee8d5;
+}
+
 .time {
     background: #fdf6e3;
 }
@@ -107,7 +110,8 @@ body[type*=server] .message {
 .text .sender[mtype="myself"] {
     /*min-width: 105px;
     max-width: 220px;*/
-    background: #eee8d5;
+    /*background: #eee8d5;*/
+    background: #fdf6e3;
     border-right: 1px solid #eee8d5;
     /*border-bottom: 1px solid #ff0000;*/
 }
