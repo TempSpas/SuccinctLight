@@ -429,7 +429,7 @@ div.line[ltype="action"] .time:not(.selectedUser) {
 
 div.line.selectedUser[highlight="false"] .time {
     transition: color 0.25s ease-in;
-    color: #93a1a1; /* Emphasized content */
+    color: #586e75; /* Emphasized content */
 }
 
 /* Remove existing borders when selected */
@@ -442,7 +442,7 @@ div.line.selectedUser[highlight="false"] {
     transition-property: color, border-top, border-bottom, background-color;
     transition-duration: 0.25s, 0.25s, 0.25s, 0.25s;
 
-    color: #93a1a1; /* Emphasized content */
+    color: #586e75; /* Emphasized content */
     border: 1px solid #0f728a; /* dark red top/bottom border */
     border-left: none;
     border-right: none;
