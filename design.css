@@ -326,7 +326,8 @@ body[type*=server] .event .message:before {
 /* This controls the background color of the area */
 /* next to the event messages where a nick would be. */
 .event .sender {
-    background: inherit;
+    /*background: inherit;*/
+    background: #eee8d5;
     /*border-right: 1px solid #FF0000 !important;*/
     /*border-top: 1px solid #eee8d5;*/
     /*border-bottom: 1px solid #eee8d5; // Added*/
@@ -347,7 +348,7 @@ body[type*=server] .event .message:before {
 }*/
 
 .text[highlight*=true] {
-    border: 1px solid #284e84;
+    border: 1px solid #dacea4;
     border-left: none;
     border-right: none;
     outline: none;
@@ -364,7 +365,7 @@ body[type*=server] .event .message:before {
 .text[highlight*=true] .message,
 .text[highlight*=true] .sender,
 .text[highlight*=true] .time {
-    background-color: #1b3458;
+    background-color: #ffe6ff;
 }
 
 .text[highlight*=true]:hover .message,
