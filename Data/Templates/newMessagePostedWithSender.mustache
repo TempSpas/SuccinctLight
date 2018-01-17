@@ -29,17 +29,13 @@
 		data-nickname="{{nickname}}"
 
 		{{#nicknameColorHashingEnabled}}
-			{{#nicknameColorHashingIsStyleBased}}
-				{{#nicknameColorStyleOverride}}
-					data-override-color="true"
-				{{/nicknameColorStyleOverride}}
+			{{#nicknameColorStyleOverride}}
+			data-override-color="true"
+			{{/nicknameColorStyleOverride}}
 
-				{{^ isEmpty(nicknameColorStyle) }}
-				style="color: {{nicknameColorStyle}};"
-				{{/ isEmpty(nicknameColorStyle) }}
-			{{^nicknameColorHashingIsStyleBased}}
-				data-color-number="{{nicknameColorNumber}}"
-			{{/nicknameColorHashingIsStyleBased}}
+			{{^ isEmpty(nicknameColorStyle) }}
+			style="color: {{nicknameColorStyle}};"
+			{{/ isEmpty(nicknameColorStyle) }}
 		{{/nicknameColorHashingEnabled}}>{{formattedNickname}}</span>
 
 	<span class="message">{{{formattedMessage}}}
