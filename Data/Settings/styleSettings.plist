@@ -18,7 +18,7 @@
     <integer>6</integer>
 
     <key>Underlying Window Color</key>
-    <string>#222222</string>
+    <string>#cccccc</string>
 
     <key>Nickname Color Style</key>
     <string>HSL-light</string>
