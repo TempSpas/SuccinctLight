@@ -146,8 +146,8 @@ div.line {
 }
 
 /* /me action messaging */
-.line[ltype*=action] .message,
-.line[ltype*=action] .sender {
+div.line[data-line-type="action"] .message,
+div.line[data-line-type="action"] .sender {
     /*background: #fdf6e3;*/
     font-style: italic;
 }
@@ -155,12 +155,12 @@ div.line {
 /* Match own nick field on actions with regular */
 /* lighter color of own nick field. */
 .line[nickname-type*=myself] 
-.line[ltype*=action] .sender {
+div.line[data-line-type="action"] .sender {
     /*background: #eee8d5;*/
 }
 
 /* Fix action formatting. */
-.line[type*=action] .sender {
+div.line[data-line-type="action"] .sender {
     padding: 5px 8px 3px;
     /*border-right: none;*/ /* Experiment with this. */
     /* Will need to place a border on the bottom of own */
@@ -169,7 +169,7 @@ div.line {
 
 /* Placed before the user's name when performing */
 /* a /me action. */
-.line[ltype*=action] .sender:before {
+div.line[data-line-type="action"] .sender:before {
     content: '• ';
 }
 
