@@ -1,9 +1,9 @@
 Succinct Style for Textual
 ==========================
 
-Succinct is a [solarized dark](http://ethanschoonover.com/solarized) theme for the Textual IRC client based on the [Colloquy theme of the same name](https://github.com/TempSpas/succinct-for-colloquy). The code was built off of the [Sulaco](https://github.com/rgrove/textual-sulaco) dark theme. The theme is still in beta, so expect some kinks here and there.
+Succinct is a [solarized](http://ethanschoonover.com/solarized) theme for the Textual IRC client based on the [Colloquy theme of the same name](https://github.com/TempSpas/succinct-for-colloquy). The code was built off of the [Sulaco](https://github.com/rgrove/textual-sulaco) dark theme. The Light variant is still in beta, so expect some kinks here and there.
 
-![Screenshot](/Screenshots/screenshot1.png?raw=true)
+<!-- ![Screenshot](/Screenshots/screenshot1.png?raw=true) -->
 
 ## Features
 
@@ -22,7 +22,7 @@ Succinct is a [solarized dark](http://ethanschoonover.com/solarized) theme for t
 
 ## Installing
 
-1. [Download the Succinct theme](https://github.com/TempSpas/textual-succinct/archive/master.zip)
+1. Download the Succinct theme
 
 2. Open Textual's preferences. Go to Addons->Installed Addons and click the
    "Open in Finder" button next to the "Custom Addons Location" label.
@@ -36,11 +36,9 @@ Succinct is a [solarized dark](http://ethanschoonover.com/solarized) theme for t
 
 ## TO-DO
 
-* Tweak highlight message color.
+* Many color tweaks.
 
-* Finalize selected user colors.
-
-* Make changes to inline images. Should have a more uniform alignment pattern.
+* Examine inline image changes.
 
 ## License
 
