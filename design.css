@@ -216,26 +216,26 @@ div.line[data-line-type="action"] .sender:before {
 
 /* Different symbols for join/leave messages */
 /* for easier visual reference. */
-.line[ltype*=join] .message:before {
+.line[data-line-type="join"] .message:before {
     content: '→ ';
 }
 
 /* Green for joins */
-.line[ltype*=join] .message:hover:before {
+.line[data-line-type="join"] .message:hover:before {
     color: #339933 !important;
 }
 
-.line[ltype*=kick] .message:before,
-.line[ltype*=part] .message:before,
-.line[ltype*=quit] .message:before {
+.line[data-line-type="kick"] .message:before,
+.line[data-line-type="part"] .message:before,
+.line[data-line-type="quit"] .message:before {
     content: '← ';
     /*font-weight: bold;*/
 }
 
 /* Red for leaving */
-.line[ltype*=kick] .message:hover:before,
-.line[ltype*=part] .message:hover:before,
-.line[ltype*=quit] .message:hover:before {
+.line[data-line-type="kick"] .message:hover:before,
+.line[data-line-type="part"] .message:hover:before,
+.line[data-line-type="quit"] .message:hover:before {
     color: #dc322f !important;
 }
 
@@ -335,8 +335,8 @@ body[type*=server] .event .message:before {
 
 /* This controls the text color of the entire highlighted */
 /* message, as well as the timestamp text color. */
-.text[highlight*=true],
-.text[highlight*=true] .time {
+.text[data-highlight="true"],
+.text[data-highlight="true"] .time {
     font-weight: bold;
     color: #2aa198 !important;
     border:none; /* BADBADNOTGOOD */
@@ -347,14 +347,14 @@ body[type*=server] .event .message:before {
     padding: 5px 8px 3px !important;
 }*/
 
-.text[highlight*=true] {
+.text[data-highlight="true"] {
     border: 1px solid #dacea4;
     border-left: none;
     border-right: none;
     outline: none;
 }
 
-.text[highlight*=true]:hover {
+.text[data-highlight="true"]:hover {
     border-color: #3069ab;
 }
 
