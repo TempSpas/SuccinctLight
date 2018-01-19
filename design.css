@@ -177,7 +177,7 @@ div.line[data-line-type="action"] .sender:before {
 /*body[type*=channel]*/ .event .message {
     font-style: italic;
     color: #93a1a1 !important;
-    background: #E0E0FF;
+    background: #d9d9d9;
     font-size: 0.8em !important;
     padding: 3px 8px 1px;
     line-height: 1.0rem;
@@ -188,7 +188,7 @@ div.line[data-line-type="action"] .sender:before {
 
 /*body[type*=channel]*/ .event .time {
     color: #93a1a1 !important;
-    background: #E0E0FF;
+    background: #d9d9d9;
     font-size: 0.8em !important;
     padding: 3px 8px 1px;
     /*padding: 2 8px;*/
@@ -501,7 +501,7 @@ body div#loadingScreen {
 /* Topic Bar */
 #topicBar {
     background: rgba(238, 232, 213, 0.7); /* #333 */
-    border-bottom: 1px solid #dacea4;
+    border-bottom: 1px dotted #dacea4;
     /*box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.8);*/
     /*color: #efefef;*/
     color: #586e75;
@@ -512,16 +512,16 @@ body div#loadingScreen {
     padding: 4px 12px 2px;
     position: fixed;
     right: 0;
-    text-align: center;
+    /*text-align: center;*/
     top: 0;
     z-index: 2;
 
     /* Uncomment this and lines 595-598 for */
     /* a topic bar that only shows the whole */
     /* topic when hovering. */
-    /*overflow: hidden;
+    overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis;*/
+    text-overflow: ellipsis;
 }
 
 /* Hovering over the topic makes it completely */
@@ -532,9 +532,8 @@ body div#loadingScreen {
     /* Uncomment these and the lines in #topicBar */
     /* for a topic bar that only shows the whole */
     /* topic when hovering. */
-
-    /*overflow: visible;
-    white-space: normal;*/
+    overflow: visible;
+    white-space: normal;
 }
 
 
