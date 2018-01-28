@@ -366,7 +366,7 @@ body[type*=server] .event .message:before {
 .text[data-highlight*=true] .message,
 .text[data-highlight*=true] .sender,
 .text[data-highlight*=true] .time {
-    background-color: #ffccff;
+    background-color: #ffe6ff;
 }
 
 .text[data-highlight*=true]:hover .message,
@@ -438,6 +438,10 @@ div.line.selectedUser[data-highlight="false"] .time {
 div.line.selectedUser[data-highlight="false"] .message,
 div.line.selectedUser[data-highlight="false"] .time {
     border: none;
+}
+
+div.line.selectedUser[data-highlight="false"] .sender:before {
+	content: '* ';
 }
 
 div.line.selectedUser[data-highlight="false"] {
