@@ -387,7 +387,7 @@ body[type*=server] .event .message:before {
 }
 
 .message_buffer_session_indicator > hr {
-    background: #93a1a1; /* Lines on either side */
+    background: #b58900; /* Lines on either side */
     border: 0;
     height: 1px;
     margin-top: 0.6em;
@@ -398,7 +398,7 @@ body[type*=server] .event .message:before {
 .message_buffer_session_indicator > span {
     font-style: oblique;
     margin: 0 1em;
-    color: #586e75;
+    color: #b58900;
 }
 
 .message_buffer_session_indicator + #mark {
