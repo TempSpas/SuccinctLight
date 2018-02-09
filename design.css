@@ -317,6 +317,10 @@ body[type*=server] .event .message:before {
     border-bottom: 1px solid #eee8d5; // Added
 }
 
+.event + :not(.event) .sender {
+	border-top: 1px solid #eee8d5;
+}
+
 /* This controls the background color of the area */
 /* next to the event messages where a nick would be. */
 .event .sender {
