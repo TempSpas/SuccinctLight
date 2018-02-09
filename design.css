@@ -176,7 +176,7 @@ div.line[data-line-type="action"] .sender:before {
 
 /* Any and all channel events */
 /*body[type*=channel]*/ .event .message {
-    font-style: italic;
+    /*font-style: italic;*/
     color: #93a1a1 !important;
     background: #d9d9d9;
     font-size: 0.8em !important;
@@ -216,13 +216,10 @@ div.line[data-line-type="action"] .sender:before {
 }
 
 /* Different symbols for join/leave messages */
-/* for easier visual reference. */
+/* for easier visual reference. Green for joins, */
+/* red for parts. */
 .line[data-line-type="join"] .message:before {
     content: '→ ';
-}
-
-/* Green for joins */
-.line[data-line-type="join"] .message:hover:before {
     color: #339933 !important;
 }
 
@@ -230,15 +227,15 @@ div.line[data-line-type="action"] .sender:before {
 .line[data-line-type="part"] .message:before,
 .line[data-line-type="quit"] .message:before {
     content: '← ';
-    /*font-weight: bold;*/
+    color: #dc322f !important;
 }
 
 /* Red for leaving */
-.line[data-line-type="kick"] .message:hover:before,
+/*.line[data-line-type="kick"] .message:hover:before,
 .line[data-line-type="part"] .message:hover:before,
 .line[data-line-type="quit"] .message:hover:before {
     color: #dc322f !important;
-}
+}*/
 
 /* Lock icon that appears next to OTR chats. */
 /* (Off the record) */
