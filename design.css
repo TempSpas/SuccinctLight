@@ -151,13 +151,6 @@ div.line[data-line-type="action"] .sender {
     font-style: italic;
 }
 
-/* Match own nick field on actions with regular */
-/* lighter color of own nick field. */
-.line[nickname-type*=myself] 
-div.line[data-line-type="action"] .sender {
-    /*background: #eee8d5;*/
-}
-
 /* Fix action formatting. */
 div.line[data-line-type="action"] .sender {
     padding: 5px 8px 3px;
@@ -335,7 +328,7 @@ body[type*=server] .event .message:before {
 .text[data-highlight="true"] .time {
     font-weight: bold;
     color: #2aa198 !important;
-    border:none; /* BADBADNOTGOOD */
+    /*border: 1px solid #ff0000;*/ /* BADBADNOTGOOD */
     /*color: #ff0000;*/
 }
 
@@ -344,11 +337,12 @@ body[type*=server] .event .message:before {
 }*/
 
 .text[data-highlight="true"] {
-    border: 1px solid #ffe6ff; /* dacea4 */
-    border-left: none;
-    border-right: none;
-    /*border: none;*/
-    outline: none;
+    /*border: 1px solid #ffe6ff;*/ /* dacea4 */
+    /*border-top: 1px solid #d33682;
+    border-bottom: 1px solid #ff0000;*/
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: #d33682;
 }
 
 .text[data-highlight="true"]:hover {
@@ -368,7 +362,7 @@ body[type*=server] .event .message:before {
 .text[data-highlight*=true]:hover .message,
 .text[data-highlight*=true]:hover .sender,
 .text[data-highlight*=true]:hover .time {
-    background-color: #ffccff;
+    /*background-color: #ffccff;*/
 }
 
 .znc-playback-end {
@@ -525,7 +519,6 @@ body div#loadingScreen {
     /*box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.8);*/
     /*color: #efefef;*/
     color: #586e75;
-    /*font-size: small !important;*/
     font-weight: 600;
     left: 0;
     opacity: 1.0 !important;  /* Overrides JS opacity. */ 
