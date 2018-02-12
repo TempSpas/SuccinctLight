@@ -35,8 +35,9 @@ The theme will now be ready to use, accessible in Textual's preferences under `S
 
 <!-- NOTE: The theme currently displays the full topic bar at all times. If you wish to have it display a shortened version that lengthens upon hovering, uncomment the lines marked at 576 and 584. -->
 
-<!-- ## TO-DO -->
+## TO-DO
 
+* Still not really happy with the highlight message color. Suggestions welcome.
 
 ## License
 
