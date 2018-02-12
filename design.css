@@ -30,8 +30,6 @@ a {
 /* hovered over. */
 a:hover {
     /*border: none;*/
-    /* Changes the dotted underline on links to */
-    /* solid upon hovering. */
     /*border-bottom: solid 1px #8cb3ff;*/
 }
 
@@ -153,13 +151,6 @@ div.line[data-line-type="action"] .sender {
     font-style: italic;
 }
 
-/* Match own nick field on actions with regular */
-/* lighter color of own nick field. */
-.line[nickname-type*=myself] 
-div.line[data-line-type="action"] .sender {
-    /*background: #eee8d5;*/
-}
-
 /* Fix action formatting. */
 div.line[data-line-type="action"] .sender {
     padding: 5px 8px 3px;
@@ -175,8 +166,7 @@ div.line[data-line-type="action"] .sender:before {
 }
 
 /* Any and all channel events */
-/*body[type*=channel]*/ .event .message {
-    font-style: italic;
+.event .message {
     color: #93a1a1 !important;
     background: #d9d9d9;
     font-size: 0.8em !important;
@@ -187,7 +177,7 @@ div.line[data-line-type="action"] .sender:before {
     /*border-bottom: #ff0000;*/
 }
 
-/*body[type*=channel]*/ .event .time {
+.event .time {
     color: #93a1a1 !important;
     background: #d9d9d9;
     font-size: 0.8em !important;
@@ -216,28 +206,18 @@ div.line[data-line-type="action"] .sender:before {
 }
 
 /* Different symbols for join/leave messages */
-/* for easier visual reference. */
+/* for easier visual reference. Green for joins, */
+/* red for parts. */
 .line[data-line-type="join"] .message:before {
     content: '→ ';
-}
-
-/* Green for joins */
-.line[data-line-type="join"] .message:hover:before {
-    color: #339933 !important;
+    color: #339933;
 }
 
 .line[data-line-type="kick"] .message:before,
 .line[data-line-type="part"] .message:before,
 .line[data-line-type="quit"] .message:before {
     content: '← ';
-    /*font-weight: bold;*/
-}
-
-/* Red for leaving */
-.line[data-line-type="kick"] .message:hover:before,
-.line[data-line-type="part"] .message:hover:before,
-.line[data-line-type="quit"] .message:hover:before {
-    color: #dc322f !important;
+    color: #dc322f;
 }
 
 /* Lock icon that appears next to OTR chats. */
@@ -267,7 +247,7 @@ body div.line[ltype*=off-the-record-encryption-status] p {
 }
 
 body div.line[ltype*=off-the-record-encryption-status]:before .sender {
-	content: '🔒 ';
+	content: "$";
 }
 
 /* Whois message styling */
@@ -328,6 +308,10 @@ body[type*=server] .event .message:before {
     border-bottom: 1px solid #eee8d5; // Added
 }
 
+.event + :not(.event) .sender {
+	border-top: 1px solid #eee8d5;
+}
+
 /* This controls the background color of the area */
 /* next to the event messages where a nick would be. */
 .event .sender {
@@ -344,7 +328,7 @@ body[type*=server] .event .message:before {
 .text[data-highlight="true"] .time {
     font-weight: bold;
     color: #2aa198 !important;
-    border:none; /* BADBADNOTGOOD */
+    /*border: 1px solid #ff0000;*/ /* BADBADNOTGOOD */
     /*color: #ff0000;*/
 }
 
@@ -353,11 +337,9 @@ body[type*=server] .event .message:before {
 }*/
 
 .text[data-highlight="true"] {
-    border: 1px solid #ffe6ff; /* dacea4 */
-    border-left: none;
-    border-right: none;
-    /*border: none;*/
-    outline: none;
+    /*border: 1px solid #ffe6ff;*/ /* dacea4 */
+    border-top: 1px solid #ffb3ff;
+    border-bottom: 1px solid #ffb3ff;
 }
 
 .text[data-highlight="true"]:hover {
@@ -377,7 +359,7 @@ body[type*=server] .event .message:before {
 .text[data-highlight*=true]:hover .message,
 .text[data-highlight*=true]:hover .sender,
 .text[data-highlight*=true]:hover .time {
-    background-color: #ffccff;
+    /*background-color: #ffccff;*/
 }
 
 .znc-playback-end {
@@ -398,7 +380,7 @@ body[type*=server] .event .message:before {
 }
 
 .message_buffer_session_indicator > hr {
-    background: #93a1a1; /* Lines on either side */
+    background: #b58900; /* Lines on either side */
     border: 0;
     height: 1px;
     margin-top: 0.6em;
@@ -409,7 +391,7 @@ body[type*=server] .event .message:before {
 .message_buffer_session_indicator > span {
     font-style: oblique;
     margin: 0 1em;
-    color: #586e75;
+    color: #b58900;
 }
 
 .message_buffer_session_indicator + #mark {
@@ -534,7 +516,6 @@ body div#loadingScreen {
     /*box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.8);*/
     /*color: #efefef;*/
     color: #586e75;
-    /*font-size: small !important;*/
     font-weight: 600;
     left: 0;
     opacity: 1.0 !important;  /* Overrides JS opacity. */ 
