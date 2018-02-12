@@ -40,7 +40,7 @@ The theme will now be ready to use, accessible in Textual's preferences under `S
 
 ## License
 
-Copyright (c) 2017
+Copyright (c) 2018
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the ‘Software’), to deal in
