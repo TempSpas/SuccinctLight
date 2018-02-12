@@ -1,7 +1,7 @@
 Succinct Style for Textual
 ==========================
 
-Succinct is a [Solarized](http://ethanschoonover.com/solarized) theme for the Textual IRC client based on the [Colloquy theme of the same name](https://github.com/TempSpas/succinct-for-colloquy). The code was originally built off of the [Sulaco](https://github.com/rgrove/textual-sulaco) dark theme. A dark variant of this theme is available [here](https://github.com/TempSpas/textual-succinct).
+Succinct is a theme for the Textual IRC client based on the [Colloquy theme of the same name](https://github.com/TempSpas/succinct-for-colloquy). It utilizes the [Solarized](http://ethanschoonover.com/solarized) color palette. The code was originally built off of the [Sulaco](https://github.com/rgrove/textual-sulaco) dark theme. A dark variant of this theme is available [here](https://github.com/TempSpas/textual-succinct).
 
 ![Screenshot](/screenshots/screenshot1.png?raw=true)
 
@@ -22,7 +22,7 @@ Succinct is a [Solarized](http://ethanschoonover.com/solarized) theme for the Te
 
 ## Installing
 
-1. Download the Succinct theme by going to the [release page](https://github.com/TempSpas/SuccinctLight/releases) and downloading the latest version of `SuccinctLight.zip`. Unzip the file.
+1. Download the Succinct theme by going to the [release page](https://github.com/TempSpas/SuccinctLight/releases) and downloading the latest version of `SuccinctLight.zip`.
 
 2. Open Textual's preferences. Go to `Addons`->`Installed Addons` and click the
    `Open in Finder` button next to the `Custom Addons Location` label.
