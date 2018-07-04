@@ -533,8 +533,8 @@ body div#loadingScreen {
     top: 0;
     z-index: 2;
 
-    /* Uncomment this and lines 595-598 for */
-    /* a topic bar that only shows the whole */
+    /* Uncomment this and lines in #topicBar:hover */
+    /* for a topic bar that only shows the whole */
     /* topic when hovering. */
     overflow: hidden;
     white-space: nowrap;
